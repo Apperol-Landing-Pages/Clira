@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
 
-  const menuOpen = document.getElementById('menuOpen');
+const menuOpen = document.getElementById('menuOpen');
 const menuClose = document.getElementById('menuClose');
 const mobileMenu = document.getElementById('mobileMenu');
 
@@ -67,6 +67,15 @@ if (menuOpen && menuClose && mobileMenu) {
 
   menuLinks.forEach(link => {
     link.addEventListener('click', () => {
+      mobileMenu.classList.remove('active');
+      document.body.classList.remove('lock');
+    });
+  });
+
+  const menuButtons = document.querySelectorAll('#mobileMenu button');
+
+  menuButtons.forEach(button => {
+    button.addEventListener('click', () => {
       mobileMenu.classList.remove('active');
       document.body.classList.remove('lock');
     });
