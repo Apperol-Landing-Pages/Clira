@@ -120,17 +120,17 @@ header {
 }
 
 .mobile-logo {
-    width: 40px;
+    width: 46px;
 }
 
 .menu-close {
-    width: 40px;
+    width: 46px;
     cursor: pointer;
 }
 
 .menu-open {
     display: none;
-    width: 40px;
+    width: 46px;
     cursor: pointer;
 }
 
