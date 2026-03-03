@@ -1,0 +1,155 @@
+@import "../assets/font/stylesheet.css";
+
+
+.screen-info{
+     padding: 0px;
+}
+
+.screen-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+@media (max-width: 767px) {
+    .screen-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .screen-block {
+        width: 100%;
+        max-width: 320px;
+    }
+
+}
+
+
+.sreen-el{
+    display: none;
+  position: absolute;
+  top: 144%;       
+  left: 10%;
+  width: 80%;
+  height: 40%;
+  border-radius: 22px; 
+  pointer-events: none;
+}
+
+.screen-block{
+    width: 320px; 
+    opacity: 1;
+    transform: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+}
+
+.screen-frame{
+    border-radius: 28px;
+    background: #FFFFFF;
+    padding: 40px;
+    padding-bottom: 0px;
+}
+
+.screen-foto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.images-icon-block-screen{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen-block-title{
+        margin-top: 10px;
+  color: #0E0E0E;
+  font-size: 22px;
+    font-weight: 600;
+  line-height: 1.4;
+    text-align: center;
+}
+
+.screen-block-text{
+         margin-top: 10px;
+  color: #0E0E0E99;
+  font-size: 14px;
+    font-weight: 400;
+  line-height: 16px;
+    text-align: center; 
+}
+
+
+@media (max-width: 767px) {
+
+    .screen-info{
+        border-radius: 28px;
+    background: #F3E7FF;
+     padding-bottom: 40px;
+}
+    
+       .screen-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .screen-block {
+        width: 100%;
+        max-width: 320px;
+        
+    }
+
+    .screen-frame {
+        padding: 30px 30px 0;
+        background: none;
+    }
+
+ 
+    .sreen-el {
+        display: block;
+        position: absolute;
+        bottom: -80px;
+        top: 52%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+    }
+
+    
+    .images-icon-block-screen,
+    .screen-block-title,
+    .screen-block-text {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 3;
+        width: 80%;
+        text-align: center;
+    }
+
+    .images-icon-block-screen {
+        bottom: 0px;
+    }
+
+    .screen-block-title {
+        bottom: -25px;
+    }
+
+    .screen-block-text {
+        bottom: -75px;
+        font-size: 14px;
+    }
+
+    .screen-block {
+        margin-bottom: 120px;
+    }
+}
