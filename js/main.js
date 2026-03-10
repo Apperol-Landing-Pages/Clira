@@ -7,9 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (!reviewsSlider) {
         reviewsSlider = new Swiper('.reviews-slider', {
+          initialSlide: 1,
           centeredSlides: true,
-          slidesPerView: 1,
-          spaceBetween: 24,
+          slidesPerView: 1.3,
+          spaceBetween: 20,
           pagination: {
             el: '.swiper-pagination',
             clickable: true,
